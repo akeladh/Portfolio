@@ -68,7 +68,7 @@ export const FooterLinks = styled(LinkS)`
   align-items: center;
   text-decoration: none;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 18px;
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
