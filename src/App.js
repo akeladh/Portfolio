@@ -4,6 +4,8 @@ import {BrowserRouter as Router} from 'react-router-dom';
 import Sidebar from './components/Sidebar';
 import { useState } from 'react';
 import HeroSection from './components/HeroSection';
+import AboutSection from './components/About';
+import Footer from './components/Footer';
 
 function App() {
   const[isOpen, setIsOpen] = useState(false);
@@ -18,6 +20,8 @@ function App() {
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
       <HeroSection/>
+      <AboutSection/>
+      <Footer/>
     </Router>
   );
 }

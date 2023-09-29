@@ -1,8 +1,8 @@
 import styled from "styled-components";
 import pp from '../../imgs/ProfilePic.png'
 import bar from '../../imgs/GoldBar.png'
-import github from '../../imgs/github.svg'
-import linkedin from '../../imgs/linkedin.svg'
+import github from '../../imgs/icons/github.svg'
+import linkedin from '../../imgs/icons/linkedin.svg'
 
 export const HeroContainer = styled.div`
   height: 800px;
@@ -10,6 +10,7 @@ export const HeroContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 75px;
   //background-color: #A5C2AA;
 `
 export const HeroBody = styled.div`
