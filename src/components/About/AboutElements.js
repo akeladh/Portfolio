@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import gBack from '../../imgs/GreenbackGround.png'
+import gBack from '../../imgs/GreenbackGround.svg'
 import aboutPic from '../../imgs/aboutPic.png'
 
 
 export const AboutContainer = styled.div`
-height: 850px;
+  height: auto;
   width: auto;
   display: flex;
   justify-content: center;
@@ -20,6 +20,7 @@ export const AboutBodyWraper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 120px 0;
   //background-color: purple;
 `
 

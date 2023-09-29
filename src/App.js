@@ -6,6 +6,7 @@ import { useState } from 'react';
 import HeroSection from './components/HeroSection';
 import AboutSection from './components/About';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
   const[isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ function App() {
       <Navbar toggle={toggle}/>
       <HeroSection/>
       <AboutSection/>
+      <Contact/>
       <Footer/>
     </Router>
   );
