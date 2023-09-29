@@ -96,5 +96,5 @@ export const YellowSunIcon = styled(BsFillSunFill)`
   color: #FFD597;
   height: 35px;
   margin-left: 10px;
-  width: auto;
+  width: auto; 
 `
