@@ -3,7 +3,7 @@ import { Nav, NavbarContainer,NavLogo, Img, MobileIcon,NavMenu,NavItem, NavLinks
 
 
 
-const Navbar = () => {
+const Navbar = ({toggle}) => {
   return (
     <>
       <Nav>
@@ -11,9 +11,7 @@ const Navbar = () => {
           <NavLogo to='/'>
             <Img/>
           </NavLogo>
-          <MobileIcon>
-            {/* <FaBars/> */}
-          </MobileIcon>
+          <MobileIcon onClick={toggle}/>
           <NavMenu>
             <NavItem>
               <NavLinks to="about">About</NavLinks>

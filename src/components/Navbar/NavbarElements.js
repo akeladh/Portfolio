@@ -7,7 +7,7 @@ import {FaBars} from 'react-icons/fa';
 
 export const Nav = styled.nav`
   background: #4B4755;
-  height: 130px;
+  height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,5 +96,5 @@ export const YellowSunIcon = styled(BsFillSunFill)`
   color: #FFD597;
   height: 35px;
   margin-left: 10px;
-  width: auto; /* This will maintain the aspect ratio */
+  width: auto;
 `
