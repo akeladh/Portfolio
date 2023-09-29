@@ -33,13 +33,36 @@ export const AboutBody = styled.div`
   padding: 0px 0px;
   //background-color: pink;
 `
+export const TextBanner = styled.div`
+  height: 15%;
+  width: 80%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  //background-color: lightpink;
+`
 
+export const Banner = styled.h1`
+color: #BD8134;
+margin-bottom: 16px;
+font-size: 25px;
+`
+
+export const Div = styled.div`
+height: 6px;
+margin-bottom: 14px;
+margin-left: 10px;
+width: 70%;
+background-color:#BD8134;
+border-radius: 10px;
+`
 
 export const Picture = styled.img.attrs({
   src: `${aboutPic}`
 })`
   height: 75%;  
-  margin-left:40px;
+  margin-left:30px;
+  padding-right: 10px;
 `;
 
 export const RightSection = styled.div`
@@ -67,7 +90,7 @@ export const TextSection = styled.div`
 export const TextDescription = styled.div`
   height: 100%;
   width: 80%;
-  //background-color: lightcoral;
+//background-color: lightcoral;
 `
 
 export const Header = styled.h1`
@@ -84,29 +107,7 @@ export const Paragraph = styled.p`
   color:#4B4755;
 `
 
-export const TextBanner = styled.div`
-  height: 15%;
-  width: 80%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  //background-color: lightpink;
-`
 
-export const Banner = styled.h1`
-color: #BD8134;
-margin-bottom: 16px;
-font-size: 25px;
-`
-
-export const Div = styled.div`
-height: 6px;
-margin-bottom: 14px;
-margin-left: 10px;
-width: 70%;
-background-color:#BD8134;
-border-radius: 10px;
-`
 
 export const TechStackSection = styled.div`
   height: auto;
