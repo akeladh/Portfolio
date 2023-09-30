@@ -20,11 +20,11 @@ const Projects = () => {
           />
           <ProjectCardR
             url = {bnbT}
-            title="Deep Learning Rental"
-            description="A multi-page responsive web application that provides users with a user-friendly interface to access comprehensive company information, product listings, and seamless communication channels."
+            title="BitsNBytes"
+            description="A fullstack web application that provides users with a user-friendly interface to access comprehensive company information, product listings, and seamless communication channels."
             bw1="&#8226; React.js"
-            bw2="&#8226; Styled Components"
-            bw3=""
+            bw2="&#8226; TailWind CSS"
+            bw3="&#8226; AWS"
           />
       </ProjectBasesBody>
     </ProjectsBody>

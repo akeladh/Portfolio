@@ -68,7 +68,7 @@ const ImgSide = styled.img`
 
 const InfoSide = styled.div`
   height: auto; //change to auto
-  padding-left: 35px;
+  padding: 0 35px;
   width: 50%;
   //background-color: yellow;
 `;
