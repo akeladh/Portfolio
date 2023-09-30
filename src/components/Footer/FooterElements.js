@@ -14,10 +14,6 @@ export const FooterBar = styled.footer`
   position: sticky;
   top:0;
   z-index: 10;
-
-  @media screen and (max-width: 1100px){
-        transition: 0.8s all ease;
-    }
 `
 
 export const FooterContainer = styled.div`
@@ -50,10 +46,6 @@ export const FooterMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-
-  @media screen and (max-width: 768px){
-    display: none;
-  }
 `
 
 export const FooterItem = styled.li`

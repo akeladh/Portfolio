@@ -7,6 +7,7 @@ import HeroSection from './components/HeroSection';
 import AboutSection from './components/About';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Projects from './components/Projects';
 
 function App() {
   const[isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ function App() {
       <Navbar toggle={toggle}/>
       <HeroSection/>
       <AboutSection/>
+      <Projects/>
       <Contact/>
       <Footer/>
     </Router>
