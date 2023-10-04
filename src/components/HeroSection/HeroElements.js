@@ -101,14 +101,18 @@ margin: 0 45px;
 cursor: pointer;
 `
 
-export const ResumeButton = styled.button`
+export const ResumeButton = styled.a`
   height: 40px;
   width: 112px;
-  border:none;
+  border: none;
   border-radius: 20px;
   font-weight: 700;
   background-color: #A5C2AA;
-  color:white;
+  color: white;
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
   cursor: pointer;
-`
+`;

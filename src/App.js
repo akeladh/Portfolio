@@ -21,10 +21,10 @@ function App() {
     <Router >
       <Sidebar isOpen={isOpen} toggle={toggle}/>
       <Navbar toggle={toggle}/>
-      <HeroSection/>
-      <AboutSection/>
-      <Projects/>
-      <Contact/>
+      <HeroSection id="hero"/>
+      <AboutSection id="about"/>
+      <Projects id = "projects"/>
+      <Contact id="contact"/>
       <Footer/>
     </Router>
   );

@@ -10,13 +10,13 @@ const Footer = () => {
           </FooterLogo>
           <FooterMenu>
           <FooterItem>
-              <FooterLinks to="about">About</FooterLinks>
+              <FooterLinks to="about"  smooth={true} duration={500} spy={true} offset={-175}>About</FooterLinks>
             </FooterItem>
             <FooterItem>
-              <FooterLinks to="projects">Projects</FooterLinks>
+              <FooterLinks to="projects"  smooth={true} duration={500} spy={true} offset={-75}>Projects</FooterLinks>
             </FooterItem>
             <FooterItem>
-              <FooterLinks to="contact">Contact</FooterLinks>
+              <FooterLinks to="contact"  smooth={true} duration={500} spy={true} offset={-150}>Contact</FooterLinks>
             </FooterItem>
           </FooterMenu>
       </FooterContainer>

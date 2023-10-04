@@ -1,5 +1,6 @@
 import React from 'react'
 import { HeroContainer, HeroBody, ProfilePic, LeftSection, TextSection, TextButtons, Bar, TextDescription, Header, Paragraph, GithubIcon, LinkedInIcon, ResumeButton } from './HeroElements'
+import resume from './resume.pdf'
 
 const HeroSection = () => {
   return (
@@ -18,7 +19,7 @@ const HeroSection = () => {
         <TextButtons>
           <GithubIcon/>
           <LinkedInIcon/>
-          <ResumeButton> Resume</ResumeButton>
+          <ResumeButton href={resume}> Resume</ResumeButton>
           </TextButtons>
           
       </LeftSection>

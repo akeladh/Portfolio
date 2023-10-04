@@ -1,12 +1,13 @@
 import React from 'react'
 import { Header, ProjectsBody, ProjectsContainer, ProjectBasesBody, ProjectCardR, ProjectCardL } from './ProjectElements'
 
-import dlr from '../../imgs/dlrTest.png'
+import dlr from '../../imgs/dlr.png'
 import bnbT from '../../imgs/bnb.png'
+
 
 const Projects = () => {
   return (
-   <ProjectsContainer>
+   <ProjectsContainer id="projects">
     <ProjectsBody>
       <Header>Projects</Header>
       <ProjectBasesBody>
@@ -17,6 +18,7 @@ const Projects = () => {
             bw1="&#8226; React.js"
             bw2="&#8226; Styled Components"
             bw3=""
+            demoUrl="https://youtu.be/h9vOR1IgmDY"
           />
           <ProjectCardR
             url = {bnbT}
@@ -25,6 +27,7 @@ const Projects = () => {
             bw1="&#8226; React.js"
             bw2="&#8226; TailWind CSS"
             bw3="&#8226; AWS"
+            demoUrl="https://www.youtube.com/watch?v=P4YvX50njV4"
           />
       </ProjectBasesBody>
     </ProjectsBody>

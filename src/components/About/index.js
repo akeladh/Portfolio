@@ -21,7 +21,7 @@ import aws from '../../imgs/icons/AWS.png'
 
 const AboutSection = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id = "about">
       <AboutBodyWraper>
         <AboutBody>
         <Picture />

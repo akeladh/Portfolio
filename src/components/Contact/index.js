@@ -6,7 +6,7 @@ import mail from '../../imgs/icons/Message.svg'
 
 const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <ContactBody>
         <Header>Contact Me</Header>
         <ContactMethodBody>

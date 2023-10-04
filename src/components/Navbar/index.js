@@ -14,13 +14,13 @@ const Navbar = ({toggle}) => {
           <MobileIcon onClick={toggle}/>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about">About</NavLinks>
+              <NavLinks to="about" smooth={true} duration={500} spy={true} offset={-175}>About</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="projects">Projects</NavLinks>
+              <NavLinks to="projects" smooth={true} duration={500} spy={true} offset={-75}>Projects</NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact">Contact</NavLinks>
+              <NavLinks to="contact" smooth={true} duration={500} spy={true} offset={-150}>Contact</NavLinks>
             </NavItem>
             <YellowSunIcon/>
           </NavMenu>

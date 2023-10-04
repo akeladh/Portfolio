@@ -129,12 +129,14 @@ const BuiltWithText = styled.p`
 `;
 
 
-const LiveDemo = styled.div`
+const LiveDemo = styled.a`
   height: 100%;
   width: 50%;
   display: flex;
   align-items: flex-start;
+  flex-direction: row;
   cursor: pointer;
+  text-decoration: none;
   //background-color: violet;
 `;
 
@@ -153,10 +155,12 @@ const DemoLabel = styled.p`
   color: #4b4755;
 `;
 
-export const ProjectCardL = ({url,title, description, bw1, bw2, bw3}) => {
+export const ProjectCardL = ({url,title, description, bw1, bw2, bw3, demoUrl}) => {
   return (
     <CardWrapper>
-      <ImgSide src= {url}/>
+        <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+        <ImgSide src={url} />
+      </a>
       <InfoSide>
         <InfoSideTop>
           <ProjectTitle>{title}</ProjectTitle>
@@ -169,7 +173,7 @@ export const ProjectCardL = ({url,title, description, bw1, bw2, bw3}) => {
           <BuiltWithText>{bw2}</BuiltWithText>
           <BuiltWithText>{bw3}</BuiltWithText>
             </BuiltWithSect>
-          <LiveDemo>
+          <LiveDemo href={demoUrl} target="_blank" rel="noopener noreferrer">
             <LinkIcon/>
             <DemoLabel>Demo</DemoLabel>
           </LiveDemo>
@@ -179,7 +183,7 @@ export const ProjectCardL = ({url,title, description, bw1, bw2, bw3}) => {
   );
 };
 
-export const ProjectCardR = ({url,title, description, bw1, bw2, bw3}) => {
+export const ProjectCardR = ({url,title, description, bw1, bw2, bw3, demoUrl}) => {
   return (
     <CardWrapper>
       <InfoSide>
@@ -194,13 +198,15 @@ export const ProjectCardR = ({url,title, description, bw1, bw2, bw3}) => {
           <BuiltWithText>{bw2}</BuiltWithText>
           <BuiltWithText>{bw3}</BuiltWithText>
             </BuiltWithSect>
-          <LiveDemo>
-            <LinkIcon/>
+            <LiveDemo href={demoUrl} target="_blank" rel="noopener noreferrer">
+            <LinkIcon />
             <DemoLabel>Demo</DemoLabel>
           </LiveDemo>
         </InfoSideBottom>
       </InfoSide>
-      <ImgSide src={url} />
+      <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+        <ImgSide src={url} />
+      </a>
     </CardWrapper>
   );
 };
