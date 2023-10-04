@@ -16,9 +16,12 @@ export const Nav = styled.nav`
   top:0;
   z-index: 10;
 
-  @media screen and (max-width: 1100px){
-        transition: 0.8s all ease;
+  @media screen and (max-width: 768px){
+        transition: 0.5s all ease;
+        height: 85px;
     }
+
+   
 `
 
 export const NavbarContainer = styled.div`
@@ -33,7 +36,7 @@ max-width: 1250px;
 //background-color: green;
 `
 
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
     justify-self: flex-start;
     cursor: pointer;
     display: flex;

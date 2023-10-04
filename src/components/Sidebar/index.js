@@ -9,9 +9,10 @@ const Sidebar = ({isOpen,toggle}) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-          <SidebarLink to='projects' onClick={toggle}>Projects</SidebarLink>
-          <SidebarLink to='contact' onClick={toggle}>Contact</SidebarLink>
+        <SidebarLink to='hero' onClick={toggle} smooth={true} duration={500} spy={true} offset={-125}>Home</SidebarLink>
+          <SidebarLink to='about' onClick={toggle} smooth={true} duration={500} spy={true} offset={-175}>About</SidebarLink>
+          <SidebarLink to='projects' onClick={toggle} smooth={true} duration={500} spy={true} offset={-75}>Projects</SidebarLink>
+          <SidebarLink to='contact' onClick={toggle} smooth={true} duration={500} spy={true} offset={-155}>Contact</SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SideBarContainer>

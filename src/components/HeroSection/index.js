@@ -4,7 +4,7 @@ import { HeroContainer, HeroBody, ProfilePic, LeftSection, TextSection, TextButt
 
 const HeroSection = () => {
   return (
-    <HeroContainer>
+    <HeroContainer id="hero">
       <HeroBody> 
       <LeftSection>
         <TextSection>

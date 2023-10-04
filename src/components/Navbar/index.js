@@ -8,7 +8,7 @@ const Navbar = ({toggle}) => {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to='/'>
+          <NavLogo to='hero' smooth={true} duration={500} spy={true} offset={-125}>
             <Img/>
           </NavLogo>
           <MobileIcon onClick={toggle}/>

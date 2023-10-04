@@ -7,14 +7,14 @@ export const SideBarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   height: 100%;
-  background: #88759E;
+  background: rgb(136,117,158, 0.95);
   display: grid;
   align-items: center;
   top: 0;
   right: 0;
   transition: 0.3s ease-in-out;
   opacity: ${({isOpen}) => (isOpen ? '100%' : '0')};
-  top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
+  right: ${({isOpen}) => (isOpen ? '0' : '-100%')};
 `
 
 export const CloseIcon = styled(FaTimes)`
@@ -23,7 +23,7 @@ export const CloseIcon = styled(FaTimes)`
 
 export const Icon = styled.div`
   position: absolute;
-  top: 2.75rem;
+  top: 1.75rem;
   right: 1.5rem;
   font-size: 2rem;
   cursor: pointer;
