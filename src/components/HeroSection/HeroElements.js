@@ -78,6 +78,11 @@ export const TextDescription = styled.div`
   width: 75%;
   padding: 5px 40px 0px;
   //background-color: lavender;
+
+  @media screen and (max-width:850px){
+    padding: 5px 20px 0px;
+  }
+
 `
 
 export const Header = styled.h1`
