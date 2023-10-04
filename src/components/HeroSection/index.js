@@ -1,6 +1,6 @@
 import React from 'react'
 import { HeroContainer, HeroBody, ProfilePic, LeftSection, TextSection, TextButtons, Bar, TextDescription, Header, Paragraph, GithubIcon, LinkedInIcon, ResumeButton } from './HeroElements'
-import resume from './resume.pdf'
+
 
 const HeroSection = () => {
   return (
@@ -17,9 +17,12 @@ const HeroSection = () => {
             </TextDescription>
           </TextSection>
         <TextButtons>
-          <GithubIcon/>
+          <a href="https://github.com/akeladh" target="_blank" rel="noopener noreferrer">
+          <GithubIcon/> </a>
+          <a href="https://www.linkedin.com/in/akeladoho" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon/>
-          <ResumeButton href={resume}> Resume</ResumeButton>
+          </a>
+          <ResumeButton href="https://github.com/akeladh/Portfolio/blob/4e62924792e59d55d403d79b762a6c983de8556d/src/Akela_Do-Ho_%20FS_Resume.pdf"> Resume</ResumeButton>
           </TextButtons>
           
       </LeftSection>
