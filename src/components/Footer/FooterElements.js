@@ -14,6 +14,10 @@ export const FooterBar = styled.footer`
   position: sticky;
   top:0;
   z-index: 10;
+  @media screen and (max-width: 768px){
+        transition: 0.5s all ease;
+        height: 100px;
+    }
 `
 
 export const FooterContainer = styled.div`
@@ -39,6 +43,11 @@ export const Img = styled.img.attrs({
   src: `${logo}`
 })`
   height: 80px;
+
+  @media screen and (max-width: 768px){
+        transition: 0.5s all ease;
+        height: 60px;
+    }
 `;
 
 export const FooterMenu = styled.ul`

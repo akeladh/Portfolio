@@ -15,14 +15,14 @@ export const ProjectsContainer = styled.div`
 
 export const ProjectsBody = styled.div`
   height: auto;
-  width: 1100px;
+  max-width: 1100px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   padding: 40px;
-
-  background-color: white;
+  
+  //background-color: slategray;
 `;
 
 export const Header = styled.h1`
@@ -30,6 +30,9 @@ export const Header = styled.h1`
   color: #4b4755;
   font-weight: 700;
   //margin-bottom: 45px;
+  @media screen and (max-width: 850px){
+    font-size: 40px;
+  }
 `;
 
 export const ProjectBasesBody = styled.div`
@@ -44,7 +47,7 @@ export const ProjectBasesBody = styled.div`
   //background-color: pink;
 `;
 
-const CardWrapper = styled.div`
+const CardWrapperL = styled.div`
   height: auto;
   max-width: 100%;
   display: flex;
@@ -53,6 +56,29 @@ const CardWrapper = styled.div`
   margin-bottom: 100px;
 
   //background-color: lightcoral;
+
+  @media screen and (max-width: 850px){
+    flex-direction: column;
+    margin-bottom: 55px;
+    margin-top: 25px;
+  }
+`;
+
+const CardWrapperR = styled.div`
+  height: auto;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+  margin-bottom: 100px;
+
+  //background-color: lightcoral;
+
+  @media screen and (max-width: 850px){
+    flex-direction: column-reverse;
+    margin-bottom: 30px;
+    margin-top: 25px;
+  }
 `;
 
 const ImgSide = styled.img`
@@ -71,6 +97,10 @@ const InfoSide = styled.div`
   padding: 0 35px;
   width: 50%;
   //background-color: yellow;
+
+  @media screen and (max-width: 850px){
+    width: auto;
+  }
 `;
 
 const InfoSideTop = styled.div`
@@ -88,12 +118,20 @@ const ProjectTitle = styled.h2`
   font-weight: 700;
   color: #4b4755;
   margin-bottom: 10px;
+
+  @media screen and (max-width: 850px){
+    font-size: 22px;
+  }
 `;
 const ProjectDescript = styled.p`
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5em;
   color: #4b4755;
+
+  @media screen and (max-width: 850px){
+    font-size: 16px;
+  }
 `;
 
 const InfoSideBottom = styled.div`
@@ -126,6 +164,9 @@ const BuiltWithText = styled.p`
   margin-bottom: 5px;
   padding-left: 10px;
   color: #4b4755;
+  @media screen and (max-width: 850px){
+    font-size: 16px;
+  }
 `;
 
 
@@ -157,7 +198,7 @@ const DemoLabel = styled.p`
 
 export const ProjectCardL = ({url,title, description, bw1, bw2, bw3, demoUrl}) => {
   return (
-    <CardWrapper>
+    <CardWrapperL>
         <a href={demoUrl} target="_blank" rel="noopener noreferrer">
         <ImgSide src={url} />
       </a>
@@ -179,13 +220,13 @@ export const ProjectCardL = ({url,title, description, bw1, bw2, bw3, demoUrl}) =
           </LiveDemo>
         </InfoSideBottom>
       </InfoSide>
-    </CardWrapper>
+    </CardWrapperL>
   );
 };
 
 export const ProjectCardR = ({url,title, description, bw1, bw2, bw3, demoUrl}) => {
   return (
-    <CardWrapper>
+    <CardWrapperR>
       <InfoSide>
         <InfoSideTop>
           <ProjectTitle>{title}</ProjectTitle>
@@ -207,6 +248,6 @@ export const ProjectCardR = ({url,title, description, bw1, bw2, bw3, demoUrl}) =
       <a href={demoUrl} target="_blank" rel="noopener noreferrer">
         <ImgSide src={url} />
       </a>
-    </CardWrapper>
+    </CardWrapperR>
   );
 };
