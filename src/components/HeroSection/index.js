@@ -22,7 +22,7 @@ const HeroSection = () => {
           <a href="https://www.linkedin.com/in/akeladoho" target="_blank" rel="noopener noreferrer">
           <LinkedInIcon/>
           </a>
-          <ResumeButton href="https://github.com/akeladh/Portfolio/blob/4e62924792e59d55d403d79b762a6c983de8556d/src/Akela_Do-Ho_%20FS_Resume.pdf"> Resume</ResumeButton>
+          <ResumeButton href="https://github.com/akeladh/Portfolio/blob/4e62924792e59d55d403d79b762a6c983de8556d/src/Akela_Do-Ho_%20FS_Resume.pdf" target="_blank"> Resume</ResumeButton>
           </TextButtons>
           
       </LeftSection>
