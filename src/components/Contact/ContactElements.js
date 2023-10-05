@@ -10,6 +10,10 @@ export const ContactContainer = styled.div`
   background-image: url(${pBack});
   background-size: cover;
   padding: 100px 0;
+
+  @media screen and (max-width:850px){
+    padding: 50px 0;
+  }
 `;
 
 export const ContactBody = styled.div`
@@ -36,11 +40,17 @@ export const ContactMethodBody = styled.div`
   width: 100%;
   padding: 20px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
   padding: 20px 0;
+  
 
   //background-color: pink;
+
+  @media screen and (max-width:850px){
+    flex-direction: column;
+    align-items: flex-start;
+  }
 `;
 
 const ContactMethod = styled.div`
@@ -49,8 +59,13 @@ const ContactMethod = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-right: 75px;
 
   //background-color: lightblue;
+  @media screen and (max-width:850px){
+    margin-bottom: 25px;
+    width:100%;
+  }
 `;
 
 const ContactMethodHeader = styled.h2`
@@ -58,11 +73,17 @@ const ContactMethodHeader = styled.h2`
   margin-left: 60px;
   margin-bottom: 15px;
   color: #4B4755;
+
+  @media screen and (max-width:850px){
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
 `;
 
 const TextIconWrapper= styled.div`
   display: flex;
   align-items: center;
+  width: 100%;
   
   //background-color: green;
 
@@ -76,9 +97,15 @@ const Icon = styled.img`
 
 const Text = styled.p`
   font-size: 18px;
-  color: #666;
   display: inline-block;
+  color: #666;
   margin-left: 12px;
+  word-wrap: break-word;
+
+  //ackground-color: purple;
+  @media screen and (max-width:850px){
+    font-size: 15px;
+  }
 `;
 
 export const InfoCard = ({ headerText, iconSrc, contentText }) => {
