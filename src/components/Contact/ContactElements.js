@@ -33,6 +33,10 @@ export const Header = styled.h1`
   color: #4b4755;
   font-weight: 700;
   margin-bottom: 25px;
+
+  @media screen and (max-width: 850px){
+    font-size: 40px;
+  }
 `;
 
 export const ContactMethodBody = styled.div`
@@ -47,7 +51,7 @@ export const ContactMethodBody = styled.div`
 
   //background-color: pink;
 
-  @media screen and (max-width:850px){
+  @media screen and (max-width:725px){
     flex-direction: column;
     align-items: flex-start;
   }
