@@ -18,6 +18,9 @@ import node from '../../imgs/icons/Nodejs.png'
 import sc from '../../imgs/icons/styledComponentsIcon.png'
 import tw from '../../imgs/icons/tailwindIcon.png'
 import aws from '../../imgs/icons/AWS.png'
+import python from '../../imgs/icons/python.png'
+import mongo from '../../imgs/icons/mongo.png'
+import express from '../../imgs/icons/expressjs.png'
 
 const AboutSection = () => {
   return (
@@ -52,14 +55,18 @@ const AboutSection = () => {
         <TechStackSection>
           <Banner>Tech Stack: </Banner>
           <IconWrapper>
+          
+          <Icon src={mongo} alt="python Icon" />
+          <Icon src={express} alt="python Icon" />
+          <Icon src={react} alt="React Icon" />
+          <Icon src={node} alt="NodeJS Icon" />
+          <Icon src={python} alt="python Icon" />
+          <Icon src={aws} alt="AWS Icon" />
           <Icon src={js} alt="JavaScript Icon" />
           <Icon src={html} alt="HTML Icon" />
           <Icon src={css} alt="CSS Icon" />
-          <Icon src={react} alt="React Icon" />
-          <Icon src={node} alt="NodeJS Icon" />
           <Icon src={sc} alt="Styled Components Icon" />
           <Icon src={tw} alt="TailWind Icon" />
-          <Icon src={aws} alt="AWS Icon" />
           </IconWrapper>
         </TechStackSection>
       </AboutBodyWraper>

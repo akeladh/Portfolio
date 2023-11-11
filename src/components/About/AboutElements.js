@@ -159,5 +159,5 @@ export const IconWrapper = styled.div`
 
 export const Icon = styled.img`
   height: 60px;
-  margin: 5px 0;
+  margin: 5px 10px;
 `;
