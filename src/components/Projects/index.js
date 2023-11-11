@@ -12,7 +12,8 @@ const Projects = () => {
       <Header>Projects</Header>
       <ProjectBasesBody>
           <ProjectCardL
-            url = {dlr}
+            image = {dlr}
+            link = 'https://deeplearningrental.com/'
             title="Deep Learning Rental"
             description="A multi-page responsive web application that provides users with a user-friendly interface to access comprehensive company information, product listings, and seamless communication channels."
             bw1="&#8226; React.js"

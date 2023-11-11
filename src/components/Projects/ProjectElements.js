@@ -196,11 +196,11 @@ const DemoLabel = styled.p`
   color: #4b4755;
 `;
 
-export const ProjectCardL = ({url,title, description, bw1, bw2, bw3, demoUrl}) => {
+export const ProjectCardL = ({image,link, title, description, bw1, bw2, bw3, demoUrl}) => {
   return (
     <CardWrapperL>
-        <a href={demoUrl} target="_blank" rel="noopener noreferrer">
-        <ImgSide src={url} />
+      <a href={link} target="_blank" rel="noopener noreferrer">
+        <ImgSide src={image} />
       </a>
       <InfoSide>
         <InfoSideTop>
