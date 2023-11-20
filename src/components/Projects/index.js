@@ -3,6 +3,7 @@ import { Header, ProjectsBody, ProjectsContainer, ProjectBasesBody, ProjectCardR
 
 import dlr from '../../imgs/dlr.png'
 import bnbT from '../../imgs/bnb.png'
+import amaC from '../../imgs/amazonClone.png'
 
 
 const Projects = () => {
@@ -21,6 +22,7 @@ const Projects = () => {
             bw3=""
             demoUrl="https://youtu.be/h9vOR1IgmDY"
           />
+
           <ProjectCardR
             url = {bnbT}
             title="BitsNBytes"
@@ -29,6 +31,17 @@ const Projects = () => {
             bw2="&#8226; TailWind CSS"
             bw3="&#8226; AWS"
             demoUrl="https://www.youtube.com/watch?v=P4YvX50njV4"
+          />
+
+          <ProjectCardL
+            image = {amaC}
+            link = 'https://akeladh.github.io/amazonCloneProject/'
+            title="Amazon Checkout Clone"
+            description="An Amazon Clone that simulates the product checkout process"
+            bw1="&#8226; Javascript"
+            bw2="&#8226; HTML"
+            bw3="&#8226; CSS"
+            demoUrl="https://akeladh.github.io/amazonCloneProject/"
           />
       </ProjectBasesBody>
     </ProjectsBody>
